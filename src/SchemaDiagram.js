@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import CarryOutWorkClientsSchema from "./carryOutWorkClientsSchema";
 import schema1 from "./Resources/schema1.png"
 import schema2 from "./Resources/schema2.png"
 import schema3 from "./Resources/schema3.png"
@@ -20,7 +21,7 @@ function SchemaDiagram ({selectedSchema, handleRenderChange}) {
             return (schema3)
         }
         if (selectedSchema == 4){
-            return (schema4)
+            return (<CarryOutWorkClientsSchema></CarryOutWorkClientsSchema>)
         }
         if (selectedSchema == 5){
             return (<ServiceAndGovernSchema></ServiceAndGovernSchema>)
@@ -30,9 +31,10 @@ function SchemaDiagram ({selectedSchema, handleRenderChange}) {
 
      return (
         <div>
-            <button onClick={() => handleRenderChange("Main Diagram")}>Back</button>
+            <br></br>
             {/* <img src={getSchema(selectedSchema)}></img> */}
             <div>{getSchema(selectedSchema)}</div>
+            <button onClick={() => handleRenderChange("Main Diagram")}>Back</button>
         </div>
         
     )

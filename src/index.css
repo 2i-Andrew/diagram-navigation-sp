@@ -13,6 +13,12 @@ code {
   margin: 0px;
 }
 
+#horizontalRightArrow {
+  transform: rotate(90deg);
+  width: 100%;
+  margin: 0px;
+}
+
 #topLeftArrow {
   margin-left: 75%;
   margin-top: 50%;
@@ -40,10 +46,16 @@ code {
   margin-bottom: 50%;
 }
 
-table {
+#diagramTable {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 #circle {
@@ -81,15 +93,18 @@ td {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .rectangle {
-  background-color: dodgerblue;
+  color: white;
+  background-color: #57D5A8;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5%;
   width: 50%;
   border: solid;
-  border-color: black;
+  border-color: #3E9C7A;
   border-width: 1px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -97,6 +112,24 @@ a {
 }
 
 .rectangle:hover{
-  background-color: aqua;
+  background-color: #3da27f;
+  color: black;
+}
+.tableRectangle {
+  color: white;
+  background-color: #57D5A8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5%;
+  width: 100%;
+  border: solid;
+  border-color: #3E9C7A;
+  border-width: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
 }
 
+#normalCell {
+  width: 30%;
+}

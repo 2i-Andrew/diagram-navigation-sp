@@ -24,7 +24,7 @@ function MainDiagram ({sendSchemaNumber, handleRenderChange}) {
     return (
         <div>
             <div className="MainDiagram">
-            <table>
+            <table id="diagramTable">
 
             <tr>
                 <td><img class="arrow" id="topLeftArrow" src={arrowIcon} width="50%" height="50%"/></td>
