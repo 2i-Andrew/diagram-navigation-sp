@@ -15,8 +15,7 @@ code {
 
 #horizontalRightArrow {
   transform: rotate(90deg);
-  width: 100%;
-  margin: 0px;
+  width: 30%;
 }
 
 #topLeftArrow {
@@ -68,6 +67,11 @@ td {
   padding: 0px;
 }
 
+.sideBySide {
+  display: flex;
+  width: 100%;
+}
+
 .circleDiv {
   position: absolute;
   z-index: -1;
@@ -102,19 +106,47 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.5%;
-  width: 50%;
+  /* width: 50%; */
   border: solid;
   border-color: #3E9C7A;
   border-width: 1px;
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.completedRectangle {
+  color: white;
+  background-color: #57D5A8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5%;
+  /* width: 50%; */
+  border: solid;
+  border-color: #3E9C7A;
+  border-width: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+
 }
 
 .rectangle:hover{
   background-color: #3da27f;
   color: black;
 }
+
+.completedRectangle:hover{
+  background-color: #414ab2;
+  color: black;
+}
+
 .tableRectangle {
   color: white;
   background-color: #57D5A8;
@@ -133,3 +165,51 @@ a {
 #normalCell {
   width: 30%;
 }
+
+#thirdRowCell {
+  width: 33%;
+}
+
+#mainContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#row2 {
+  width: 20%;
+  height: 30px;
+}
+
+#width25 {
+  width: 25%;
+}
+
+#width30 {
+  width: 30%;
+}
+
+#width33 {
+  width: 33%;
+}
+
+#width50 {
+  width: 50%;
+}
+
+#width60 {
+  width: 60%;
+}
+
+#width70 {
+  width: 70%;
+}
+
+#width100 {
+  width: 100%;
+}
+
+#paddingAbove {
+  padding-top: 3%;
+}
+
